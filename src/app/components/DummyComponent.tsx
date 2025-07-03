@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 const DummyComponent = () => {
   const [array, setArray] = useState([1,2,3,4,5])
   return (
-    <div className="border-2 border-black h-full flex justify-center items-center">
+    <div className=" h-full flex justify-center items-center">
+      <input onChange={(e)=>setArray([...array,Number(e.target.value)])} type="text" placeholder="Enter a number" />
+      <button onClick={()=>setArray([...array,array.length+1])}>Add</button>
 
 {array.map((el,index)=>(
     <motion.div

@@ -32,7 +32,7 @@ export default function CourseList() {
                 {course.subSections.map((sub) => (
                   <li
                     key={sub.id}
-                    className="bg-gray-700 px-3 py-1 rounded hover:bg-gray-600 text-sm cursor-pointer transition"
+                    className="px-3 py-1 rounded hover:bg-gray-600 text-sm cursor-pointer transition"
                   >
                     {sub.name}
                   </li>
